@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #e91e63;
+        font-family: "Trebuchet MS", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        width: 100%;
+        height: 80px;
+        background: #000;
+        border: 1px solid #fff;
+        color: #fff;
+        line-height: 80px;
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+
+      .section-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px 10px 30px 10px;
+        text-align: center;
+      }
+
+      .section-content .content,
+      .section-content .aside {
+        height: calc(100vh - 200px);
+      }
+
+      .section-content .content {
+        width: calc(75% - 10px);
+        margin-right: 10px;
+        border: 1px solid #000;
+        background: #fff;
+      }
+
+      .section-content .aside {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .section-content .aside .banner,
+      .section-content .aside .widget {
+        border: 1px solid #000;
+        background: #000;
+        color: #fff;
+      }
+
+      .section-content .aside .banner {
+        height: 40%;
+        margin-bottom: 10px;
+      }
+
+      .section-content .aside .widget {
+        height: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <section class="section-content">
+      <div class="content">Main Content</div>
+      <div class="aside">
+        <div class="banner">Adsense</div>
+        <div class="widget">Another Widget</div>
+      </div>
+    </section>
+    <footer>Footer</footer>
+  </body>
+</html>
